@@ -1,8 +1,7 @@
 FROM docker/whalesay:latest
 
-RUN apt-get -y update && apt-get install -y fortunes &&\
-    mkdir /sayings
+RUN mkdir /sayings
 
 WORKDIR /sayings
 
-CMD /usr/games/fortune -a | cowsay
+CMD cat saythis.txt | cowsay
