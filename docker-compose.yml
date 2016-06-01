@@ -1,0 +1,4 @@
+volume-whale:
+  build: .
+  volumes:
+    - .:/sayings
